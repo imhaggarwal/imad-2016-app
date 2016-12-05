@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-function hash(input){
+/*function hash(input){
     var hashed=crypto.pbkdf2Sync(input, 'random', 100, 100, 'sha512');
     return hashed.toString('hex');
 }
@@ -18,7 +18,7 @@ function hash(input){
 app.get('/hash/:input', function(req,res){
    var hashString=hash(input);
    res.end(hashString);
-});
+});*/
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
