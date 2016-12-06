@@ -9,6 +9,7 @@ app.use(morgan('combined'));
 app.get('/', function (req, res) {
   //res.sendFile(path.join(__dirname, 'ui', 'index.html'));
   res.end('Finally');
+  console.log('Data Fetched');
 });
 
 /*function hash(input){
