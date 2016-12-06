@@ -18,9 +18,7 @@ app.get('/', function (req, res) {
 app.get('/hash/:input', function(req,res){
    var hashString=hash(input);
    res.end(hashString);
-});*/
-
-/*app.get('/ui/style.css', function (req, res) {
+});app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
 });
 
